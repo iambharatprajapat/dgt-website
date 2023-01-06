@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            width: fit-content;
+
+        }
+
+        form {
+            border: 1px solid black;
+            background: radial-gradient(rgb(207, 255, 234), rgb(175, 255, 225));
+            width: 350px;
+            padding: 10px;
+            font-family: Georgia, Times;
+            font-size: small;
+            margin: auto;
+            margin-left: 150%;
+        }
+
+        div {
+            padding: 5px 5px;
+        }
+
+        .date {
+            width: 300px;
+            padding: 0px 30px 0px 0px;
+        }
+
+        ::placeholder {
+            font-family: Georgia;
+            font-size: smaller;
+        }
+
+        .astrict {
+            color: red;
+        }
+
+        .btn {
+
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            margin: 5px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            opacity: 2;
+        }
+
+        #selectlist {
+            width: 49%;
+            color: gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h3>Admission Enquiry Form</h3>
+        <div>
+            <label for="Name">Name</label><span class="astrict">*</span>
+        </div>
+        <div class="name">
+            <input type="text" name="first" placeholder="First" req>
+            <input type="last" placeholder="Last">
+        </div>
+        <div>Student Details</div>
+        <div>
+            <label for="Date">Date of birth</label><span class="astrict">*</span>
+            <input type="date" name="Date" class="date">
+        </div>
+        <div><label for="Citzenship">Citzenship</label><span class="astrict">*</span></div>
+        <div><input type="text" name="Citzenship" class="date"></div>
+        <div><label for="Gender">Gender</label><span class="astrict">*</div>
+        <div><input type="text" name="Gender" class="date"></div>
+        <div> <label for="English">English proficiency</label><span class="astrict">*</span></div>
+        <div class="check">
+            <input type="checkbox" name="Beginner"><label for="beginner">Beginner</label>
+            <input type="checkbox" name="intermediate"> <label for="inter">intermediate</label>
+            <input type="checkbox" name="advance"><label for="advance">advanced</label>
+            <input type="checkbox" name="native"><label for="Native">native</label>
+        </div>
+        <div><label for="Other lang">Other known languages</label> </div>
+        <div><input type="text" name="Other lang" id="" class="date"></div>
+        <div><label for="schoolname">Current school name.</label><span class="astrict">*</span></div>
+        <div><input type="text" name="schoolname" id="" class="date"></div>
+        <div>
+            <label for="Schooladdress">Current school address</label><span class="astrict">*</span>
+        </div>
+        <div><input type="text" name="Schooladdress" placeholder="Street Address" class="date">
+        </div>
+        <div><input type="text" name="Streetaddress" placeholder="Street Address Line2" class="date">
+        </div>
+        <div>
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="region" placeholder="Region">
+        </div>
+        <div>
+            <input type="text" name="zip" placeholder="Postal/Zip Code">
+            <select name="Country" id="selectlist">
+                <option value="Select" disabled hidden selected>Country</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="America">America</option>
+            </select>
+        </div>
+        <div>
+            <label for="schoolyear">Current School Year/Grade</label><span class="astrict">*</span>
+        </div>
+        <div>
+            <input type="text" name="schoolyear" id="" class="date">
+        </div>
+        <div>
+            <label for="completeyears">Number of successfully completed years of schooling</label><span
+                class="astrict">*</span>
+        </div>
+        <div>
+            <input type="text" name="completeyears" class="date">
+        </div>
+        <div>
+            <label for="startdate">Possible start date</label>
+        </div>
+        <div>
+            <input type="date" name="startdate" class="date">
+        </div>
+        <div>Contact Details</div>
+        <div>
+            <input type="tel" name="mobile" placeholder="+91" maxlength="10" required>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn">Reset</button>
+
+    </form>
+</body>
+
+</html>
